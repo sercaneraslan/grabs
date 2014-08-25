@@ -1,0 +1,11 @@
+######################
+.DS_Store
+
+# Grabs ingored files #
+######################
+build
+node_modules
+reports
+app/js/components
+app/css/sprite-retina.styl
+app/css/sprite.styl

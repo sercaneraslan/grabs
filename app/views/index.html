@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="grabs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="googlebot" content="noarchive">
+        <meta name="Revisit-After" content="1 days">
+        <meta name="robots" content="index,follow">
+        <link rel="shortcut icon" href="img/grabs/favicon.ico">
+
+        <!-- Directive - pageTitle -->
+        <title></title>
+
+        <!-- Development or Live Mode Styles -->
+        <% if (development) { %>
+            <% cssFiles.forEach(function (href) { %>
+                <link rel="stylesheet" type="text/css" href="<%= href %>">
+            <% }) %>
+        <% } else { %>
+            <link rel="stylesheet" type="text/css" href="css/app.min.<%= hash %>.css">
+        <% } %>
+    </head>
+    <body>
+
+        <!-- Main Content -->
+        <div ng-view></div>
+
+        <!-- Development or Live Mode Scripts -->
+        <% if (development) { %>
+            <% jsFiles.forEach(function (src) { %>
+                <script type="text/javascript" src="<%= src %>"></script>
+            <% }) %>
+            <script src="http://localhost:35729/livereload.js"></script>
+        <% } else { %>
+            <script type="text/javascript" src="js/app.min.<%= hash %>.js"></script>
+        <% } %>
+    </body>
+</html>
