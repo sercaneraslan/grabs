@@ -1,0 +1,99 @@
+{
+    "pageTitle": "Grabs: Front-End Development Environment",
+    "introduction": {
+        "title": "<span>Grabs</span> Front-End Development Environment",
+        "subtitle": "Your development environment is ready in seconds",
+        "items": [
+            {
+                "name": "Grunt",
+                "url": "http://gruntjs.com/",
+                "text": "You can add any task to your project with Grunt plugins."
+            }, {
+                "name": "Angular",
+                "url": "https://angularjs.org/",
+                "text": "You can immediately start developing your project with Angular support."
+            }, {
+                "name": "Bower",
+                "url": "http://bower.io/",
+                "text": "You can download 3rd party libraries with Bower."
+            }, {
+                "name": "Stylus",
+                "url": "http://learnboost.github.io/stylus/",
+                "text": "You can compile and compress Stylus files to CSS files."
+            }
+        ]
+    },
+    "howToInstall": {
+        "title": "<span>Grabs</span> What is it ? How to install ?",
+        "subtitle": "Grabs is a development environment offering a combination of many features that are needed which simplify adding new features, start your project immediately and providing fast development with popular libraries. ",
+        "description": "In order to use Grabs, <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> and <a href=\"http://gruntjs.com/\">Grunt</a> must be installed. By applying the steps down below your development environment will be ready to use.",
+        "steps": [
+            "git clone https://github.com/sercaneraslan/grabs.git",
+            "cd grabs",
+            "npm install",
+            "grunt bower:install",
+            "grunt"
+        ],
+        "thatsIt": "Yes, that is all."
+    },
+    "skills": {
+        "title": "<span>Grabs</span> Features",
+        "items": [
+            {
+                "name": "GRUNT",
+                "text": "You can add Grunt plugins to add more tasks to your project. You can also change the existing configurations from the <strong>gruntfile.js</strong> file."
+            }, {
+                "name": "ANGULAR",
+                "text": "Grabs comes with AngularJS. HTML5 Push State support is active and configurations are done so that all the requests are to the <strong>index.html</strong> file. You can change this behavior in <strong>app/js/config/ng-config.js</strong> file."
+            }, {
+                "name": "BOWER",
+                "text": "With Bower you can manage your external dependencies automatically. All you need to do to get them is to edit <strong>bower.json</strong> file and issue grunt <strong>bower:install command</strong>. You can also change the configuration from <strong>gruntfile.js</strong> file's <strong>bower</strong> section."
+            }, {
+                "name": "STYLUS",
+                "text": "Your Stylus files are automatically compiled to CSS and minified. You can configure this behavior in <strong>gruntfile.js</strong> under stylus section."
+            }, {
+                "name": "SPRITE",
+                "text": "Combine images under <strong>app/img/sprite</strong> directory to <strong>sprite.png</strong> file as sprite and provides automatic use of image file inside Stylus files without defining positions. <br><br> Combine images under <strong>app/img/sprite-retina</strong> directory to <strong>sprite-retina.png</strong> file as sprite and use retina sprite for devices with retine support automatically. Other files are automacitally moved to <strong>build</strong> directory. Example: app/css/global.styl."
+            }, {
+                "name": "TEMPLATE",
+                "text": "Adds templating capabilities to your HTML. You can change these settings from <strong>gruntfile.js</strong> under <strong>template</strong> section."
+            }, {
+                "name": "DEVELOPMENT MODE",
+                "text": "In development mode CSS, HTML and JavaScript files are not minimized or combined. Also images are not compressed. When you use <strong>grunt</strong> command without any arguments, it starts in development mode."
+            }, {
+                "name": "LIVE MODE",
+                "text": "In Live mode HTML, CSS and JavaScript files are minimized. CSS and JavaScript files are combined into a single CSS and JavaScript file. Images are compressed. File caching is disabled. You can use Live mode by issuing <strong>grunt live</strong> command."
+            }, {
+                "name": "JSHINT",
+                "text": "JSHint, checks your JavaScript files against a standart list of rules for high quality code. You can change these settings from <strong>gruntfile.js</strong> under <strong>jshint</strong> section."
+            }, {
+                "name": "CODE COMPLEXITY REPORT",
+                "text": "Plato produces a complexity report of the JavaScript files in your project. You can change these settings from <strong>gruntfile.js</strong> under <strong>plato</strong> section. You can get the report by issuing <strong>grunt report</strong> command."
+            }, {
+                "name": "HTML COMPRESS",
+                "text": "Your HTML files are compressed while being delivered. You can change these settings from <strong>gruntfile.js</strong> under <strong>htmlmin</strong> section."
+            }, {
+                "name": "IMAGE COMPRESS",
+                "text": "Your images are compressed automatically. You can change these settings from <strong>gruntfile.js</strong> under <strong>imagemin</strong> section."
+            }, {
+                "name": "JAVASCRIPT MINIMIZATION",
+                "text": "Your JavaScript files are minimized with SourceMap support. You can change these settings from <strong>gruntfile.js</strong> under <strong>uglify</strong> section."
+            }, {
+                "name": "NOTIFICATION",
+                "text": "Grunt will notify you when errors occur via your operating system's notification system. You can define notifications for tasks that you want. You can change these settings from <strong>gruntfile.js</strong> under <strong>notify_hooks</strong> section."
+            }, {
+                "name": "CACHE",
+                "text": "Adding a timestamp to the resulting CSS, HTML, JavaScript and Image sprite files' names allows bypassing your browser's cache. For example: <strong>app.min.1408295277445.css</strong>"
+            }, {
+                "name": "SERVER",
+                "text": "Provides a server. You can change these settings from <strong>gruntfile.js</strong> under <strong>connect</strong> section."
+            }, {
+                "name": "LIVERELOAD",
+                "text": "Whenever an HTML, CSS or JavaScript file changes your browser window will be automatically refreshed. You can change these settings from <strong>gruntfile.js</strong> under connect section."
+            }, {
+                "name": "MULTILANGUAGE SUPPORT",
+                "text": "Add multiple languages to your project. Example: <strong>homepage</strong>"
+            }
+        ]
+    }
+}

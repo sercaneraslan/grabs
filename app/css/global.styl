@@ -1,0 +1,71 @@
+/*
+*
+* Global Styles
+*
+*/
+
+@import variables
+
+@font-face
+   font-family NueLight
+   font-style normal
+   src url(../font/HelveticaNeue-UltraLight.otf)
+
+@font-face
+   font-family NueBold
+   font-style normal
+   src url(../font/HelveticaNeue-Light.otf)
+
+body
+    font-family NueLight
+
+body
+a
+a:visited
+    color $gray
+
+a
+    text-decoration none
+
+
+/*
+*
+* Sprite Example Usage:
+*
+*
+* You must import the mixins file
+*
+* @import mixins
+*
+*
+* Default:
+*
+* .myClassName
+*     getSprite $myImageFileName
+*
+* Retina:
+*
+* .myClassName
+*     getSprite $myImageFileName $myRetinaImageFileName-2x
+*
+*/
+
+
+/* Test Default:
+
+@import mixins
+
+body
+    getSprite $check
+
+*/
+
+
+/* Test Retina:
+
+@import mixins
+
+body
+    getSprite $check $check-2x
+
+*/

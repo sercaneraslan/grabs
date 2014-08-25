@@ -1,0 +1,211 @@
+/*
+*
+* Homepage Styles
+*
+*/
+
+@import mixins
+
+.introduction
+.how-to-install
+.skills
+    padding 100px 0
+    border-top 1px solid $softGray
+
+    h1
+    h3
+        font-size 20px
+        color #333
+        margin-top 5px
+        text-align center
+
+    h2
+        font-size 55px
+        text-align center
+
+        span
+            display block
+            color $yellow
+            font-size 48px
+
+/*
+*
+* Introduction
+*
+*/
+.introduction
+    border-top none
+    alignment()
+
+    ul
+        overflow hidden
+        padding 50px 0 25px
+
+        li
+            float left
+            width 290px
+            text-align center
+
+            a
+                display block
+                width 220px
+                height 220px
+                margin 0 auto
+                border-radius 50%
+                background-color $yellow
+                font-size 30px
+                line-height 223px
+                color #fff
+                position relative
+                transition $transition
+
+                &:before
+                    content ""
+                    width 204px
+                    height 204px
+                    border-radius 50%
+                    box-shadow 0 0 0 4px #fff
+                    position absolute
+                    top 8px
+                    left 8px
+                    transition $transition
+
+                &:hover
+                    line-height 220px
+                    font-size 40px
+                    transition $transition
+
+                &:hover:before
+                    transform scale(1.1)
+                    width 212px
+                    height 212px
+                    top 4px
+                    left 4px
+                    box-shadow 0 0 0 4px $yellow
+                    transition $transition
+
+            &:nth-child(even)
+                a
+                    background-color $gray
+
+                    &:before
+                        box-shadow 0 0 0 4px #fff
+
+                    &:hover:before
+                        box-shadow 0 0 0 4px $gray
+
+            p
+                margin-top 25px
+                font-size 18px
+                line-height 28px
+                color #333
+
+/*
+*
+* How to Install
+*
+*/
+.how-to-install
+    div
+    ul
+        alignment()
+
+    h1
+        margin 50px 0 25px
+        font-size 18px
+
+    p
+        font-size 18px
+        text-align center
+        color $black
+
+        a
+            font-family NueBold
+            font-weight 700
+
+    ul
+        width 500px
+        margin 25px auto
+        background #f8f8f8
+        padding 10px 10px 10px 40px
+        border 1px solid #eee
+        border-radius 5px
+        line-height 30px
+        border-left 4px solid #eff0e9
+
+        li
+            position relative
+
+            &:before
+                content "$"
+                position absolute
+                top 1px
+                left -20px
+
+/*
+*
+* Skills
+*
+*/
+.skills
+    ul
+        alignment()
+        overflow hidden
+        margin-top 50px
+
+        li
+            display block
+            float left
+            width 565px
+
+            h3
+                color $yellow
+                font-size 20px
+                text-align right
+
+            p
+                font-size 18px
+                line-height 20px
+                color $black
+                margin 5px 0
+                text-align right
+
+                strong
+                    font-family NueBold
+
+            &:nth-child(odd)
+                padding-right 25px
+                float left
+
+            &:nth-child(even)
+                position relative
+                padding 25px 0 30px 25px
+                float right
+
+                &:before
+                    content ""
+                    display block
+                    height 500px
+                    width 1px
+                    background #dbdbdb
+                    position absolute
+                    top -50px
+                    left 0
+
+                &:after
+                    content ""
+                    display block
+                    height 10px
+                    width 10px
+                    background-color #fff
+                    border-radius 50%
+                    border 5px solid $gray
+                    box-shadow 0 0 0 10px #fff
+                    position absolute
+                    margin-top -10px
+                    top 50%
+                    left -10px
+
+                h3
+                p
+                    text-align left
