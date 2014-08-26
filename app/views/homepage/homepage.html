@@ -14,34 +14,34 @@
 </div>
 <!-- .introduction -->
 
-<div class="how-to-install">
-    <h2 ng-bind-html="ln.howToInstall.title | safeHtml"></h2>
+<div class="getting-started">
+    <h2 ng-bind-html="ln.gettingStarted.title | safeHtml"></h2>
 
     <div>
-        <h1 ng-bind="ln.howToInstall.subtitle"></h1>
+        <h1 ng-bind="ln.gettingStarted.subtitle"></h1>
 
-        <p ng-bind-html="ln.howToInstall.description | safeHtml"></p>
+        <p ng-bind-html="ln.gettingStarted.description | safeHtml"></p>
 
         <ul>
-            <li ng-repeat="step in ln.howToInstall.steps" ng-bind="step"></li>
+            <li ng-repeat="step in ln.gettingStarted.steps" ng-bind="step"></li>
         </ul>
 
-        <p ng-bind="ln.howToInstall.thatsIt"></p>
+        <p ng-bind="ln.gettingStarted.thatsIt"></p>
     </div>
 </div>
-<!-- .how-to-install -->
+<!-- .getting-started -->
 
-<div class="skills">
-    <h2 ng-bind-html="ln.skills.title | safeHtml"></h2>
+<div class="features">
+    <h2 ng-bind-html="ln.features.title | safeHtml"></h2>
 
     <ul>
-        <li ng-repeat="item in ln.skills.items">
+        <li ng-repeat="item in ln.features.items">
             <h3 ng-bind="item.name"></h3>
             <p ng-bind-html="item.text | safeHtml"></p>
         </li>
     </ul>
 </div>
-<!-- .skills -->
+<!-- .features -->
 
 <!-- Include Footer -->
 <div ng-include="'/views/common/footer.html'"></div>

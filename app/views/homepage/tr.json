@@ -23,7 +23,7 @@
             }
         ]
     },
-    "howToInstall": {
+    "gettingStarted": {
         "title": "<span>Grabs</span> Nedir ? Nasıl Kurulur ?",
         "subtitle": "Grabs, geliştirme ortamında ihtiyaç duyulan birçok özelliği bir arada sunan, bu özelliklere yenilerinin eklemenmesini kolaylaştıran, popüler kütüphanelerle projeye anında başlayabilmenizi ve hızlı geliştirme yapmanızı sağlayan bir geliştirme ortamıdır.",
         "description": "Grabs için <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> ve <a href=\"http://gruntjs.com/\">Grunt</a> kurulu olmalıdır. Aşağıdaki adımları sırasıyla uyguladığınızda geliştirme ortamınız çalışır hale gelecektir.",
@@ -36,7 +36,7 @@
         ],
         "thatsIt": "Evet, hepsi bu kadar."
     },
-    "skills": {
+    "features": {
         "title": "<span>Grabs</span> ile Neler Yapılabilir ?",
         "items": [
             {
@@ -55,9 +55,6 @@
                 "name": "SPRITE",
                 "text": "<strong>app/img/sprite</strong> klasörü altındaki imajları <strong>sprite.png</strong> dosyasında sprite olarak birleştirir ve Stylus dosyalarında dosya isimleri ile pozisyon tanımlaya gerek kalmadan otomatik olarak kullabilmeyi sağlar.<br><br> <strong>app/img/sprite-retina</strong> altındaki imajları da <strong>sprite-retina.png</strong> dosyasında sprite olarak birleştirir ve ekstra bir işleme gerek kalmadan retina desteği olan cihazlarda retina'lı sprite'ı kullandırır. Diğer klasörler işlem görmeden otomatik olarak <strong>build</strong> klösörüne taşınır.<br><br> <strong>app/css/global.styl</strong> dosyasında örnek kullanım vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>sprite</strong> alanından ayarlar değiştirilebilir."
             }, {
-                "name": "ŞABLON / TEMPLATE",
-                "text": "HTML'e şablon / template özelliği ekler. <strong>gruntfile.js</strong> dosyasındaki <strong>template</strong> alanından ayarlar değiştirilebilir."
-            }, {
                 "name": "GELİŞTİRME MODU",
                 "text": "Geliştirme modunda HTML, CSS ve JavaScript dosyaları sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. İmajlar küçültülmez. <strong>grunt</strong> komutu ile geliştirme modu çalıştırılabilir."
             }, {
@@ -65,7 +62,7 @@
                 "text": "Yayın modunda HTML, CSS ve JavaScript dosyaları sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. İmajlar küçültülür. Dosyaların cache'lenmesi engellenir. <strong>grunt live</strong> komutu ile live modu çalıştırılabilir."
             }, {
                 "name": "JSHINT",
-                "text": "JSHint, JavaScript'lerinizin her kod değişiminde otomatik olarak kontrol edilmesi sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>jshint</strong> alanından ayarlar değiştirilebilir."
+                "text": "JSHint, kod kalitesini yüksek tutmak için JavaScript dosyalarınız her değiştiğinde bir kural listesine göre kontrol eder. <strong>gruntfile.js</strong> dosyasındaki <strong>jshint</strong> alanından ayarlar değiştirilebilir."
             }, {
                 "name": "KOD KARMAŞIKLIK RAPORU",
                 "text": "Proje içinde kullanılanılan JavaScript'lerin karmaşıklık raporunu oluşturur. <strong>gruntfile.js</strong> dosyasındaki <strong>plato</strong> alanından ayarlar değiştirilebilir. <strong>grunt report</strong> komutuyla raporu görüntüleyebilirsiniz."
@@ -86,7 +83,7 @@
                 "text": "Sıkıştırılan HTML, CSS, JavaScript ve imaj dosyalarının sonuna her seferinde tarihe göre değişen rakamlar ekler. Örneğin; <strong>app.min.1408295277445.css</strong>."
             }, {
                 "name": "SERVER",
-                "text": "Server kullanma özelliği sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>connect</strong> alanından ayarlar değiştirilebilir."
+                "text": "Basit bir sunucu sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>connect</strong> alanından ayarlar değiştirilebilir."
             }, {
                 "name": "LIVERELOAD",
                 "text": "Herhangi bir HTML, CSS ya da JS dosyası değiştiğinde otomatik olarak tarayıcıdaki sayfayı yeniler. <strong>gruntfile.js</strong> dosyasındaki <strong>connect</strong> alanından ayarlar değiştirilebilir."
