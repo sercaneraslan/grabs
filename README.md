@@ -18,6 +18,3 @@ Steps:
 
 Visit the [grabs.in](http://grabs.in) website.
 
-## License
-
-[MIT License](http://f.mit-license.org)
