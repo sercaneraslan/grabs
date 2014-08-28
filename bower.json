@@ -1,6 +1,19 @@
 {
     "name": "grabs",
+    "description": "Grabs - Front-End Development Environment",
+    "author" : "Grabs",
+    "license": "MIT",
+    "repository": "https://github.com/sercaneraslan/grabs.git",
     "version": "0.1.0",
+    "keywords": [
+        "framework",
+        "component",
+        "front-end",
+        "development",
+        "environment",
+        "app",
+        "grabs"
+    ],
     "dependencies": {
         "angular": "1.2.16",
         "angular-route": "1.2.16"
