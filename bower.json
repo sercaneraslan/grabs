@@ -4,6 +4,8 @@
     "author" : "Grabs",
     "license": "MIT",
     "repository": "https://github.com/sercaneraslan/grabs.git",
+    "main": "",
+    "ignore": "",
     "version": "0.1.0",
     "keywords": [
         "framework",
