@@ -8,8 +8,6 @@
         "url": "https://github.com/sercaneraslan/grabs.git"
     },
     "homepage": "http://grabs.in",
-    "main": "app/js/components/angular/angular.js",
-    "ignore": [],
     "version": "0.1.0",
     "keywords": [
         "framework",
