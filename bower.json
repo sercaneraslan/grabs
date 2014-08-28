@@ -1,12 +1,8 @@
 {
     "name": "grabs",
-    "description": "Grabs - Front-End Development Environment",
-    "author" : "Grabs",
-    "license": "MIT",
-    "repository": "https://github.com/sercaneraslan/grabs.git",
     "main": "app/js/components/",
     "ignore": [],
-    "version": "0.1.0",
+    "version": "0.0.1",
     "keywords": [
         "framework",
         "component",
