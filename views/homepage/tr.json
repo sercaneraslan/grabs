@@ -34,6 +34,11 @@
             "grunt bower:install",
             "grunt"
         ],
+        "yeoman": "Eğer Yeoman kullanıyorsanız aşağıdaki adımları uygulayabilirsiniz.",
+        "yeomanCommand": [
+            "npm install -g generator-grabs",
+            "yo grabs"
+        ],
         "thatsIt": "Evet, hepsi bu kadar."
     },
     "features": {
