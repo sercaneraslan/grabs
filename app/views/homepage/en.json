@@ -34,6 +34,11 @@
             "grunt bower:install",
             "grunt"
         ],
+        "yeoman": "The Yeoman way:",
+        "yeomanCommand": [
+            "npm install -g generator-grabs",
+            "yo grabs"
+        ],
         "thatsIt": "Yes, that is all."
     },
     "features": {

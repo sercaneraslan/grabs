@@ -26,7 +26,14 @@
             <li ng-repeat="step in ln.gettingStarted.steps" ng-bind="step"></li>
         </ul>
 
+        <p ng-bind="ln.gettingStarted.yeoman"></p>
+
+        <ul>
+            <li ng-repeat="command in ln.gettingStarted.yeomanCommand" ng-bind="command"></li>
+        </ul>
+
         <p ng-bind="ln.gettingStarted.thatsIt"></p>
+
     </div>
 </div>
 <!-- .getting-started -->
