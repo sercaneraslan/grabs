@@ -274,22 +274,19 @@ module.exports = function (grunt) {
             },
             html: {
                 files: 'app/**/*.html',
-                tasks: 'html'
+                tasks: ['template:development', 'copy:html']
             },
             css: {
                 files: 'app/**/*.styl',
-                tasks: 'css',
-                options: {
-                    nospawn: true
-                }
+                tasks: 'stylus:development'
             },
             js: {
                 files: 'app/**/*.js',
-                tasks: 'js'
+                tasks: ['copy:js', 'jshint']
             },
             json: {
                 files: 'app/**/*.json',
-                tasks: 'json'
+                tasks: 'copy:json'
             }
         }
     });
@@ -335,21 +332,5 @@ module.exports = function (grunt) {
     grunt.registerTask('report', [
         'plato:report',
         'connect:report'
-    ]);
-
-    // Watch Tasks
-    grunt.registerTask('html', [
-        'template:development',
-        'copy:html'
-    ]);
-    grunt.registerTask('css', [
-        'stylus:development'
-    ]);
-    grunt.registerTask('js', [
-        'copy:js',
-        'jshint'
-    ]);
-    grunt.registerTask('json', [
-        'copy:json'
     ]);
 };
