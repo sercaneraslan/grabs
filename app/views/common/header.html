@@ -1,5 +1,5 @@
 <header>
-    <div ng-if="lang == 'en'">
+    <div ng-if="lang == 'en' || lang == 'fr'">
         <p>
             <a href="/">Grabs<span>.in</span></a>
         </p>
@@ -12,7 +12,7 @@
             </li>
         </ul>
     </div>
-    <div ng-if="lang == 'tr'">
+    <div ng-if="lang == 'tr' || lang == 'fr'">
         <p>
             <a href="/tr">Grabs<span>.in</span></a>
         </p>
@@ -22,6 +22,19 @@
             </li>
             <li>
                 <a href="/">English</a>
+            </li>
+        </ul>
+    </div>
+    <div ng-if="lang == 'tr' || lang == 'en'">
+        <p>
+            <a href="/fr">Grabs<span>.in</span></a>
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/sercaneraslan/grabs">Github</a>
+            </li>
+            <li>
+                <a href="/">Français</a>
             </li>
         </ul>
     </div>
