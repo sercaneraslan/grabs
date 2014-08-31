@@ -1,0 +1,101 @@
+{
+    "pageTitle": "Grabs: Environnement de développement Front-End",
+    "introduction": {
+        "title": "<span>Grabs</span> Environnement de développement Front-End",
+        "subtitle": "Votre environnement de développement pret en quelques secondes",
+        "items": [
+            {
+                "name": "Grunt",
+                "url": "http://gruntjs.com/",
+                "text": "Vous pouvez faire fonctionner n'inporte quel taches grace à Grunt"
+            }, {
+                "name": "Angular",
+                "url": "https://angularjs.org/",
+                "text": "Vous pouvez immédiatement commencer à développer votre projet avec le framework Angular"
+            }, {
+                "name": "Bower",
+                "url": "http://bower.io/",
+                "text": "Vous pouvez ajouter des librairies tierces avec l'aide de Bower"
+            }, {
+                "name": "Stylus",
+                "url": "http://learnboost.github.io/stylus/",
+                "text": "Ecrivez votre code css avec Stylus"
+            }
+        ]
+    },
+    "gettingStarted": {
+        "title": "<span>Grabs</span> C'est parti!",
+        "subtitle": "Grabs facilite votre environnement de développement en installant les librairies et les outils les plus populaires et vous facilitera l'installation de nouveaux outils necessaire selon vos besoins.",
+        "description": "Pour utiliser Grabs, il vous faudra d'abord installer <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> et <a href=\"http://gruntjs.com/\">Grunt</a>. Apres avoir éxecuter les commandes suivantes une a une, vous serez pret à travailler.",
+        "steps": [
+            "git clone https://github.com/sercaneraslan/grabs.git",
+            "cd grabs",
+            "npm install",
+            "grunt bower:install",
+            "grunt"
+        ],
+        "yeoman": "Avec la méthode Yeoman:",
+        "yeomanCommand": [
+            "npm install -g generator-grabs",
+            "yo grabs"
+        ],
+        "thatsIt": "Voila, C'est tout."
+    },
+    "features": {
+        "title": "Les possibilités offertes par <span>Grabs</span>",
+        "items": [
+            {
+                "name": "GRUNT",
+                "text": "Vous pouvez ajouter des plugins Grunt pour ajouter d'autres tâches à votre projet. Vous pouvez également modifier les configurations existantes du fichier <strong>gruntfile.js</strong> selon vos besoins."
+            }, {
+                "name": "ANGULAR",
+                "text": "Grabs est livré avec AngularJS. Le support de l'HTML5 Push State est activé et les configurations sont faites de telle sorte que toutes les requetes sont faites vers le fichier <strong>index.html</strong>. Vous pouvez modifier ce comportement dans le fichier <strong>app/js/config/ng-config.js</strong> si besoin."
+            }, {
+                "name": "BOWER",
+                "text": "Avec Bower, vous pouvez gérer automatiquement vos dépendances externes. Tout ce que vous devez faire pour les intégrer a votre projet est de modifier le fichier <strong>bower.json</strong> et executer la command <strong> grunt bower:install</strong> command. Vous pouvez également modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous le répertoire <strong>bower</strong>."
+            }, {
+                "name": "STYLUS",
+                "text": "Vos fichiers Stylus sont automatiquement compilés en fichiers CSS minifiés. Vous pouvez modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous la section <strong>stylus</strong>."
+            }, {
+                "name": "SPRITE",
+                "text": "Ce plugin assemble des images sous le dossier <strong>app/img/sprite</strong> dans le fichier <strong>sprite.png</strong> et sans aucune autre intervention de votre part vos styles CSS sont prêts à être utiliser avec ce fichier sprite à la place d'un fichier pour chaque image individuelle que vous avez écrit dans votre fichier Stylus.<br> Les images sous <strong>app/img/sprite-retina</strong> assemblés dans le fichier <strong>sprite-retina.png</strong> vous permet de supporter les écrants rétina. D'autres répertoires sont copiés sous sous le dossier <strong>build</strong> sans aucun autre traitement nécessaire.<br> Vous pouvez modifier ces paramètres depuis <strong>gruntfile.js</strong> sous la section <strong>sprite</strong>. Exemple: app/css/global.styl."
+            }, {
+                "name": "DÉVELOPPEMENT MODE",
+                "text": "En mode de développement, les fichiers CSS, HTML et JavaScript ne sont pas minimisés ou combinés. Et les images ne sont pas compressés. Lorsque vous utilisez la commande <strong>grunt</strong> sans arguments, il démarre en mode développement."
+            }, {
+                "name": "LIVE MODE",
+                "text": "En mode live, les fichiers HTML, CSS et JavaScript sont minimisés. Les fichiers CSS et JavaScript sont combinés en un seul fichier CSS et JavaScript. Les images sont compressées. La mise en cache de fichiers est désactivé. Vous pouvez utiliser le mode LIVE avec la commande <strong>grunt live</strong>."
+            }, {
+                "name": "JSHINT",
+                "text": "JSHint, vérifie vos fichiers JavaScript pour vérifier une liste de règle de standart pour garder un code de qualité. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>jshint</strong>"
+            }, {
+                "name": "CODE COMPLEXITY REPORT",
+                "text": "Plato vous donne un rapport détaillé de vos fichiers JavaScript dans votre projet. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>plato</strong>. Vous pouvez obtenir le rapport avec la commande <strong>grunt report</strong>."
+            }, {
+                "name": "HTML COMPRESS",
+                "text": "Vos fichiers HTML sont compressés et pret a être livré. Vous pouvez modifier ces paramètres à partir du fichier <strong>gruntfile.js</strong> sous la section <strong>htmlmin</strong>."
+            }, {
+                "name": "IMAGE COMPRESS",
+                "text": "Vos images sont compressées automatiquement. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>imagemin</strong>."
+            }, {
+                "name": "JAVASCRIPT MINIMIZATION",
+                "text": "Vos fichiers JavaScript sont minimisés grace a SourceMap. Vous pouvez modifier ces paramètres depuis le ficher <strong>gruntfile.js</strong> sous la section <strong>uglify</strong>."
+            }, {
+                "name": "NOTIFICATION",
+                "text": "Grunt vous informe lorsque des erreurs se produisent via le système de notification de votre système d'exploitation. Vous pouvez définir des notifications pour les tâches que vous souhaitez. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>notify_hooks</strong>."
+            }, {
+                "name": "CACHE",
+                "text": "Ajout d'une valeure timestamp à la la fin du nom des fichiers sprite image, HTML, CSS, JavaScript et permet de contourner ainsi le cache de votre navigateur. Par exemple: <strong>app.min.1408295277445.css</strong>"
+            }, {
+                "name": "SERVER",
+                "text": "Fournit un serveur de base. Vous pouvez modifier ces paramètres à partir du fichier <strong>gruntfile.js</strong> sous la section <strong>connect</strong>."
+            }, {
+                "name": "LIVERELOAD",
+                "text": "Chaque fois qu'un fichier HTML, CSS ou JavaScript change, la fenêtre de votre navigateur sera mise à jour automatiquement. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>connect</strong>."
+            }, {
+                "name": "MULTI-LANGUE SUPPORT",
+                "text": "Ajoutez plusieurs langues à votre projet. Exemple: <strong>accueil</strong>"
+            }
+        ]
+    }
+}
