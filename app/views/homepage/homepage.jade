@@ -1,0 +1,40 @@
+//- Include Header
+div(ng-include="'/views/common/header.html'")
+
+.introduction(page-title='{{ ln.pageTitle }}')
+    h2(ng-bind-html='ln.introduction.title | safeHtml')
+    h3(ng-bind='ln.introduction.subtitle')
+
+    ul
+        li(ng-repeat='item in ln.introduction.items')
+            a(href='{{ item.url }}', ng-bind='item.name')
+            p(ng-bind='item.text')
+
+.getting-started
+    h2(ng-bind-html='ln.gettingStarted.title | safeHtml')
+
+    div
+        h1(ng-bind='ln.gettingStarted.subtitle')
+
+        p(ng-bind-html='ln.gettingStarted.description | safeHtml')
+
+        ul
+            li(ng-repeat='step in ln.gettingStarted.steps', ng-bind='step')
+
+        p(ng-bind='ln.gettingStarted.yeoman')
+
+        ul
+            li(ng-repeat='command in ln.gettingStarted.yeomanCommand', ng-bind='command')
+
+        p(ng-bind='ln.gettingStarted.thatsIt')
+
+.features
+    h2(ng-bind-html='ln.features.title | safeHtml')
+
+    ul
+        li(ng-repeat='item in ln.features.items')
+            h3(ng-bind='item.name')
+            p(ng-bind-html='item.text | safeHtml')
+
+//- Include Footer
+div(ng-include="'/views/common/footer.html'")
