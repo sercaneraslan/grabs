@@ -14,6 +14,9 @@ module.exports = function (grunt) {
             'css/**/*.',
             'views/**/*.'
         ],
+        sortedHtmlPaths = [
+            'views/**/*.'
+        ],
         editFilePaths = function (pathsArray, rootDirectory, fileType) {
             var paths = [];
 
@@ -23,12 +26,12 @@ module.exports = function (grunt) {
 
             return paths;
         },
-        stylusConfig = function () {
+        createFilePaths = function (paths, oldType, newType) {
             var config = {},
-                stylusFiles = grunt.file.expand({cwd: 'app'}, editFilePaths(sortedCssPaths, '', 'styl'));
+                files = grunt.file.expand({cwd: 'app'}, editFilePaths(paths, '', oldType));
 
-            stylusFiles.map(function (path) {
-                config['build/' + path.replace('styl', 'css')] = 'app/' + path;
+            files.map(function (path) {
+                config['build/' + path.replace(oldType, newType)] = 'app/' + path;
             });
 
             return config;
@@ -48,7 +51,7 @@ module.exports = function (grunt) {
                     compress: false,
                     linenos: false
                 },
-                files: stylusConfig()
+                files: createFilePaths(sortedCssPaths, 'styl', 'css')
             },
             live: {
                 options: {
@@ -61,7 +64,7 @@ module.exports = function (grunt) {
             }
         },
         copy: {
-            html: {
+            html: { // For HTML
                 expand: true,
                 cwd: 'app',
                 src: ['views/**/*.html', '!views/index.html'],
@@ -93,6 +96,17 @@ module.exports = function (grunt) {
                 src: ['js/**/*', 'views/**/*.js'],
                 dest: 'build',
                 filter: 'isFile'
+            }
+        },
+        jade: { // For Jade
+            development: {
+                options: {
+                    pretty: true
+                },
+                files: createFilePaths(sortedHtmlPaths, 'jade', 'html')
+            },
+            live: {
+                files: createFilePaths(sortedHtmlPaths, 'jade', 'html')
             }
         },
         jshint: {
@@ -170,7 +184,7 @@ module.exports = function (grunt) {
                 src: 'build/index.html',
                 dest: 'build/index.html'
             },
-            views: {
+            views: { // For HTML
                 expand: true,
                 cwd: 'app',
                 src: ['views/**/*.html', '!views/index.html'],
@@ -272,9 +286,13 @@ module.exports = function (grunt) {
                 },
                 files: 'app/**/*'
             },
-            html: {
+            html: { // For HTML and index.html
                 files: 'app/**/*.html',
-                tasks: ['template:development', 'copy:html']
+                tasks: ['copy:html', 'template:development']
+            },
+            jade: { // For Jade
+                files: 'app/**/*.jade',
+                tasks: 'jade:development'
             },
             css: {
                 files: 'app/**/*.styl',
@@ -300,7 +318,8 @@ module.exports = function (grunt) {
     // $ grunt
     grunt.registerTask('default', [
         'clean',
-        'copy:html',
+        'jade:development', // For Jade
+        'copy:html', // For HTML
         'copy:json',
         'copy:img',
         'copy:font',
@@ -320,7 +339,8 @@ module.exports = function (grunt) {
         'copy:font',
         'sprite',
         'stylus:live',
-        'htmlmin:views',
+        'jade:live', // For Jade
+        'htmlmin:views', // For HTML
         'uglify:live',
         'imagemin',
         'template:live',
