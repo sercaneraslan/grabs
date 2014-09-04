@@ -57,6 +57,9 @@
                 "name": "STYLUS",
                 "text": "Your Stylus files are automatically compiled to CSS and minified. You can configure this behavior in <strong>gruntfile.js</strong> under <strong>stylus</strong> section."
             }, {
+                "name": "JADE",
+                "text": "<a href=\"http://jade-lang.com/\">Jade</a> is a terse language for writing HTML templates. You can configure this behavior in <strong>gruntfile.js</strong> under <strong>jade</strong> section. If you use Jade, can delete \"<strong>For HTML</strong>\" rows. If you dont use Jade, can delete \"<strong>For Jade</strong>\" rows."
+            }, {
                 "name": "SPRITE",
                 "text": "This plugin combines images under <strong>app/img/sprite</strong> disrectory into <strong>sprite.png</strong> file and without any other interference on your part your CSS styles are produced to use this sprite file instead of the individual image file you wrote in your Stylus file. <br><br> Images under <strong>app/img/sprite-retina</strong> directory are combined as <strong>sprite-retina.png</strong> to help you support devices with higher pixel density. Other directories are copied into <strong>build</strong> directory without any processing. <br><br> You can change these settings from <strong>gruntfile.js</strong> under <strong>sprite</strong> section. Example: app/css/global.styl."
             }, {

@@ -57,6 +57,9 @@
                 "name": "STYLUS",
                 "text": "Vos fichiers Stylus sont automatiquement compilés en fichiers CSS minifiés. Vous pouvez modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous la section <strong>stylus</strong>."
             }, {
+                "name": "JADE",
+                "text": "<a href=\"http://jade-lang.com/\">Jade</a> is a terse language for writing HTML templates. You can configure this behavior in <strong>gruntfile.js</strong> under <strong>jade</strong> section. If you use Jade, can delete \"<strong>For HTML</strong>\" rows. If you dont use Jade, can delete \"<strong>For Jade</strong>\" rows."
+            }, {
                 "name": "SPRITE",
                 "text": "Ce plugin assemble des images sous le dossier <strong>app/img/sprite</strong> dans le fichier <strong>sprite.png</strong> et sans aucune autre intervention de votre part vos styles CSS sont prêts à être utiliser avec ce fichier sprite à la place d'un fichier pour chaque image individuelle que vous avez écrit dans votre fichier Stylus.<br> Les images sous <strong>app/img/sprite-retina</strong> assemblés dans le fichier <strong>sprite-retina.png</strong> vous permet de supporter les écrants rétina. D'autres répertoires sont copiés sous sous le dossier <strong>build</strong> sans aucun autre traitement nécessaire.<br> Vous pouvez modifier ces paramètres depuis <strong>gruntfile.js</strong> sous la section <strong>sprite</strong>. Exemple: app/css/global.styl."
             }, {
