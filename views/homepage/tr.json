@@ -30,9 +30,7 @@
         "steps": [
             "git clone https://github.com/sercaneraslan/grabs.git",
             "cd grabs",
-            "npm install",
-            "grunt bower:install",
-            "grunt"
+            "./grabs install"
         ],
         "yeoman": "Eğer Yeoman kullanıyorsanız aşağıdaki adımları uygulayabilirsiniz.",
         "yeomanCommand": [
@@ -52,7 +50,7 @@
                 "text": "Proje içinde AngularJS kuruludur. HTML5 Push State desteği açıktır ve her isteğin <strong>index.html'e</strong> gitmesi için ayarlar yapılmıştır. <strong>app/config/ng-config.js</strong> dosyasından ayarlar değiştirilebilir."
             }, {
                 "name": "BOWER",
-                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>grunt bower:install</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bower</strong> alanından grunt ayarları değiştirilebilir."
+                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>./grabs bower:install</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bower</strong> alanından grunt ayarları değiştirilebilir."
             }, {
                 "name": "STYLUS",
                 "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> yada <strong>SASS</strong> kullanabilirsiniz."
@@ -64,16 +62,16 @@
                 "text": "<strong>app/img/sprite</strong> klasörü altındaki imajları <strong>sprite.png</strong> dosyasında sprite olarak birleştirir ve Stylus dosyalarında dosya isimleri ile pozisyon tanımlaya gerek kalmadan otomatik olarak kullabilmeyi sağlar.<br><br> <strong>app/img/sprite-retina</strong> altındaki imajları da <strong>sprite-retina.png</strong> dosyasında sprite olarak birleştirir ve ekstra bir işleme gerek kalmadan retina desteği olan cihazlarda retina'lı sprite'ı kullandırır. Diğer klasörler işlem görmeden otomatik olarak <strong>build</strong> klösörüne taşınır.<br><br> <strong>app/css/global.styl</strong> dosyasında örnek kullanım vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>sprite</strong> alanından ayarlar değiştirilebilir."
             }, {
                 "name": "GELİŞTİRME MODU",
-                "text": "Geliştirme modunda HTML, CSS ve JavaScript dosyaları sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. İmajlar küçültülmez. <strong>grunt</strong> komutu ile geliştirme modu çalıştırılabilir."
+                "text": "Geliştirme modunda HTML, CSS ve JavaScript dosyaları sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. İmajlar küçültülmez. <strong>./grabs</strong> komutu ile geliştirme modu çalıştırılabilir."
             }, {
                 "name": "YAYIN MODU",
-                "text": "Yayın modunda HTML, CSS ve JavaScript dosyaları sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. İmajlar küçültülür. Dosyaların cache'lenmesi engellenir. <strong>grunt live</strong> komutu ile live modu çalıştırılabilir."
+                "text": "Yayın modunda HTML, CSS ve JavaScript dosyaları sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. İmajlar küçültülür. Dosyaların cache'lenmesi engellenir. <strong>./grabs live</strong> komutu ile live modu çalıştırılabilir."
             }, {
                 "name": "JSHINT",
                 "text": "JSHint, kod kalitesini yüksek tutmak için JavaScript dosyalarınız her değiştiğinde bir kural listesine göre kontrol eder. <strong>gruntfile.js</strong> dosyasındaki <strong>jshint</strong> alanından ayarlar değiştirilebilir."
             }, {
                 "name": "KOD KARMAŞIKLIK RAPORU",
-                "text": "Proje içinde kullanılanılan JavaScript'lerin karmaşıklık raporunu oluşturur. <strong>gruntfile.js</strong> dosyasındaki <strong>plato</strong> alanından ayarlar değiştirilebilir. <strong>grunt report</strong> komutuyla raporu görüntüleyebilirsiniz."
+                "text": "Proje içinde kullanılanılan JavaScript'lerin karmaşıklık raporunu oluşturur. <strong>gruntfile.js</strong> dosyasındaki <strong>plato</strong> alanından ayarlar değiştirilebilir. <strong>./grabs report</strong> komutuyla raporu görüntüleyebilirsiniz."
             }, {
                 "name": "HTML SIKIŞTIRMA",
                 "text": "HTML dosyalarının sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>htmlmin</strong> alanından ayarlar değiştirilebilir."
