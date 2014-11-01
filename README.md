@@ -10,9 +10,7 @@ Steps:
 
 1. `git clone https://github.com/sercaneraslan/grabs.git`
 1. `cd grabs`
-1. `npm install`
-1. `grunt bower:install`
-1. `grunt`
+1. `./grabs install`
 
 ### Documentation
 
