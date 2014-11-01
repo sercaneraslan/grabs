@@ -1,0 +1,47 @@
+#!/bin/sh
+
+COMMAND=$1
+
+cat <<EOF
+
+
+
+  ______  ______ _______ ______  _______
+ |  ____ |_____/ |_____| |_____] |______
+ |_____| |    \_ |     | |_____] ______|
+
+Grabs - Front-End Development Environment
+
+
+EOF
+
+function info {
+    echo ""
+    echo "-----------------------------------------------"
+    echo " *****  $1  *****"
+    echo "-----------------------------------------------"
+    echo ""
+}
+
+function error {
+    info "$1"
+    exit 1
+}
+
+if [[ "$COMMAND" == "install" ]]; then
+
+    info "Installing NPM Dependency"
+    npm install || error "NPM Installation FAILED"
+
+    info "Installing Bower Dependency"
+    grunt bower:install || error "Bower Installation FAILED"
+
+    info "Grunt Working"
+    grunt || error "Grunt FAILED"
+
+else
+
+    info "grunt $1 - Working"
+    grunt $1 || error "grunt $1 - FAILED"
+
+fi
