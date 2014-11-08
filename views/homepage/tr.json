@@ -62,7 +62,7 @@
                 "text": "<strong>app/img/sprite</strong> klasörü altındaki imajları <strong>sprite.png</strong> dosyasında sprite olarak birleştirir ve Stylus dosyalarında dosya isimleri ile pozisyon tanımlaya gerek kalmadan otomatik olarak kullabilmeyi sağlar.<br><br> <strong>app/img/sprite-retina</strong> altındaki imajları da <strong>sprite-retina.png</strong> dosyasında sprite olarak birleştirir ve ekstra bir işleme gerek kalmadan retina desteği olan cihazlarda retina'lı sprite'ı kullandırır. Diğer klasörler işlem görmeden otomatik olarak <strong>build</strong> klösörüne taşınır.<br><br> <strong>app/css/global.styl</strong> dosyasında örnek kullanım vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>sprite</strong> alanından ayarlar değiştirilebilir."
             }, {
                 "name": "GELİŞTİRME MODU",
-                "text": "Geliştirme modunda HTML, CSS ve JavaScript dosyaları sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. İmajlar küçültülmez. <strong>./grabs</strong> komutu ile geliştirme modu çalıştırılabilir."
+                "text": "Geliştirme modunda HTML, CSS, JavaScript ve imajlar sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. <strong>./grabs</strong> komutu ile geliştirme modu çalıştırılabilir."
             }, {
                 "name": "YAYIN MODU",
                 "text": "Yayın modunda HTML, CSS ve JavaScript dosyaları sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. İmajlar küçültülür. Dosyaların cache'lenmesi engellenir. <strong>./grabs live</strong> komutu ile live modu çalıştırılabilir."
