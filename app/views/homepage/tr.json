@@ -26,7 +26,7 @@
     "gettingStarted": {
         "title": "<span>Grabs</span> Nedir ? Nasıl Kurulur ?",
         "subtitle": "Grabs, geliştirme ortamında ihtiyaç duyulan birçok özelliği bir arada sunan, bu özelliklere yenilerinin eklenmesini kolaylaştıran, popüler kütüphanelerle projeye anında başlayabilmenizi ve hızlı geliştirme yapmanızı sağlayan bir geliştirme ortamıdır.",
-        "description": "Grabs için <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> ve <a href=\"http://gruntjs.com/\">Grunt</a> kurulu olmalıdır. Aşağıdaki adımları sırasıyla uyguladığınızda geliştirme ortamınız çalışır hale gelecektir.",
+        "description": "Grabs kullanabilmek için <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> ve <a href=\"http://gruntjs.com/\">Grunt</a> 'ın kurulu olması gereklidir. Aşağıdaki adımları sırasıyla uyguladığınızda geliştirme ortamınız çalışır hale gelecektir.",
         "steps": [
             "git clone https://github.com/sercaneraslan/grabs.git",
             "cd grabs",
