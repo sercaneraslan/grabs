@@ -1,3 +1,9 @@
 # OS generated files #
 ######################
 .DS_Store
+
+# Grabs files #
+######################
+app/
+build/
+node_modules/
