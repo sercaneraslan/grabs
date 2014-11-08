@@ -53,7 +53,7 @@
                 "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>./grabs bower:install</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bower</strong> alanından grunt ayarları değiştirilebilir."
             }, {
                 "name": "STYLUS",
-                "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> yada <strong>SASS</strong> kullanabilirsiniz."
+                "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> ya da <strong>SASS</strong> kullanabilirsiniz."
             }, {
                 "name": "JADE",
                 "text": "<a href=\"http://jade-lang.com/\">Jade</a> ile daha az kod yazarak daha akıllı HTML'ler üretebilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>jade</strong> alanından ayarlar değiştirilebilir. Eğer Jade kullanacaksanız \"<strong>For HTML</strong>\", kullanmayacaksanız \"<strong>For Jade</strong>\" yazan alanları silebilirsiniz."
