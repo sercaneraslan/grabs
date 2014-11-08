@@ -7,6 +7,7 @@
         <meta name="googlebot" content="noarchive">
         <meta name="Revisit-After" content="1 days">
         <meta name="robots" content="index,follow">
+        <base href="/">
         <link rel="shortcut icon" href="img/grabs/favicon.ico">
 
         <!-- Directive - pageTitle -->
@@ -15,10 +16,10 @@
         <!-- Development or Live Mode Styles -->
         <% if (development) { %>
             <% cssFiles.forEach(function (href) { %>
-                <link rel="stylesheet" type="text/css" href="/<%= href %>">
+                <link rel="stylesheet" type="text/css" href="<%= href %>">
             <% }) %>
         <% } else { %>
-            <link rel="stylesheet" type="text/css" href="/css/app.min.<%= hash %>.css">
+            <link rel="stylesheet" type="text/css" href="css/app.min.<%= hash %>.css">
         <% } %>
     </head>
     <body>
@@ -29,11 +30,11 @@
         <!-- Development or Live Mode Scripts -->
         <% if (development) { %>
             <% jsFiles.forEach(function (src) { %>
-                <script type="text/javascript" src="/<%= src %>"></script>
+                <script type="text/javascript" src="<%= src %>"></script>
             <% }) %>
             <script src="http://localhost:35729/livereload.js"></script>
         <% } else { %>
-            <script type="text/javascript" src="/js/app.min.<%= hash %>.js"></script>
+            <script type="text/javascript" src="js/app.min.<%= hash %>.js"></script>
         <% } %>
     </body>
 </html>
