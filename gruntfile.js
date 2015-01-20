@@ -219,6 +219,26 @@ module.exports = function (grunt) {
                 }
             }
         },
+        // Traceur Doc: https://www.npmjs.com/package/grunt-traceur
+        traceur: {
+            options: {
+                experimental: true,
+                blockBinding: true,
+                moduleNaming: {
+                    stripPrefix: "src/es6",
+                    addPrefix: "com/grabs/project"
+                },
+                copyRuntime: 'build/es6/'
+            },
+            custom: {
+                files: [{
+                    expand: true,
+                    cwd: 'app/es6/',
+                    src: '*.js',
+                    dest: 'build/es6/'
+                }]
+            }
+        },
         notify_hooks: {
             options: {
                 enabled: true,
@@ -352,5 +372,9 @@ module.exports = function (grunt) {
     grunt.registerTask('report', [
         'plato:report',
         'connect:report'
+    ]);
+    // $ grunt es6
+    grunt.registerTask('es6', [
+        'traceur'
     ]);
 };

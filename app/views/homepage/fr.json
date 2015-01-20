@@ -96,6 +96,9 @@
             }, {
                 "name": "MULTI-LANGUE SUPPORT",
                 "text": "Ajoutez plusieurs langues à votre projet. Exemple: <strong>accueil</strong>"
+            }, {
+                "name": "ECMASCRIPT 6",
+                "text": "With the command of <strong>./grabs es6</strong> you can easily convert existing JavaScript codes from ECMAScript 6 to ECMAScript 5 automatically. You should also define your settings via <strong>traceur</strong> section which resides at <strong>gruntfile.js</strong> file."
             }
         ]
     }
