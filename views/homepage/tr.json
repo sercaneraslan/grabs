@@ -96,6 +96,9 @@
             }, {
                 "name": "ÇOKLU DİL DESTEĞİ",
                 "text": "Projenize birden fazla dil seçeneği ekleyebilirsiniz. Örnek kullanım <strong>homepage</strong> sayfasında vardır."
+            }, {
+                "name": "ECMASCRIPT 6",
+                "text": "<strong>./grabs es6</strong> komutuyla JavaScript kodlarınızı ECMAScript 6 versiyonundan, ECMAScript 5 versiyonuna otomatik çevirebilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>traceur</strong> alanından ayarlarınızı tanımlamalısınız."
             }
         ]
     }
