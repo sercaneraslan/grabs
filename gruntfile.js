@@ -109,25 +109,11 @@ module.exports = function (grunt) {
                 files: createFilePaths(sortedHtmlPaths, 'jade', 'html')
             }
         },
-        jshint: {
-            files: 'app/views/**/*.js',
+        eslint: {
             options: {
-                unused: true,
-                curly: true,
-                boss: true,
-                onevar: true,
-                indent: 4,
-                camelcase: true,
-                latedef: true,
-                quotmark: 'single',
-                trailing: true,
-                evil: true,
-                white: true,
-                strict: true,
-                globals: {
-                    console: true
-                }
-            }
+                config: '.eslintrc'
+            },
+            target: ['app/views/**/*.js']
         },
         plato: {
             report: {
@@ -242,7 +228,6 @@ module.exports = function (grunt) {
         notify_hooks: {
             options: {
                 enabled: true,
-                max_jshint_notifications: 5,
                 title: "Grabs"
             }
         },
@@ -320,7 +305,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: 'app/**/*.js',
-                tasks: ['copy:js', 'jshint']
+                tasks: ['copy:js', 'eslint']
             },
             json: {
                 files: 'app/**/*.json',

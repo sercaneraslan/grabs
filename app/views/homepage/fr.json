@@ -67,9 +67,6 @@
                 "name": "LIVE MODE",
                 "text": "En mode live, les fichiers HTML, CSS et JavaScript sont minimisés. Les fichiers CSS et JavaScript sont combinés en un seul fichier CSS et JavaScript. Les images sont compressées. La mise en cache de fichiers est désactivé. Vous pouvez utiliser le mode LIVE avec la commande <strong>./grabs live</strong>."
             }, {
-                "name": "JSHINT",
-                "text": "JSHint, vérifie vos fichiers JavaScript pour vérifier une liste de règle de standart pour garder un code de qualité. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>jshint</strong>"
-            }, {
                 "name": "CODE COMPLEXITY REPORT",
                 "text": "Plato vous donne un rapport détaillé de vos fichiers JavaScript dans votre projet. Vous pouvez modifier ces paramètres depuis le fichier <strong>gruntfile.js</strong> sous la section <strong>plato</strong>. Vous pouvez obtenir le rapport avec la commande <strong>./grabs report</strong>."
             }, {
@@ -99,6 +96,9 @@
             }, {
                 "name": "ECMASCRIPT 6",
                 "text": "With the command of <strong>./grabs es6</strong> you can easily convert existing JavaScript codes from ECMAScript 6 to ECMAScript 5 automatically. You should also define your settings via <strong>traceur</strong> section which resides at <strong>gruntfile.js</strong> file."
+            }, {
+                "name": "ESLINT",
+                "text": "ESLint, vérifie vos fichiers JavaScript pour vérifier une liste de règle de standart pour garder un code de qualité. Vous pouvez modifier ces paramètres depuis le fichier <strong>.eslintrc</strong> sous la section <strong>rules</strong>"
             }
         ]
     }
