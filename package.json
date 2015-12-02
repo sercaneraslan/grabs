@@ -26,6 +26,6 @@
     "grunt-template": "~0.2.3",
     "grunt-traceur": "^0.5.1",
     "load-grunt-tasks": "~0.6.0",
-    "traceur": "0.0.81"
+    "traceur": "0.0.88"
   }
 }
