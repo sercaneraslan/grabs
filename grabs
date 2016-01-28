@@ -30,10 +30,10 @@ function error {
 
 if [[ "$COMMAND" == "install" ]]; then
 
-    info "Installing NPM Dependency"
+    info "Installing NPM Dependencies"
     npm install || error "NPM Installation FAILED"
 
-    info "Installing Bower Dependency"
+    info "Installing Bower Dependencies"
     grunt bower:install || error "Bower Installation FAILED"
 
     info "Grunt Working"
