@@ -15,6 +15,9 @@ Grabs - Front-End Development Environment
 
 EOF
 
+# increase limit of open files
+ulimit -n 2048
+
 function info {
     echo ""
     echo "-----------------------------------------------"

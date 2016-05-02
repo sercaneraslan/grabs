@@ -241,16 +241,16 @@ module.exports = function (grunt) {
         sprite: {
             normal: {
                 src: 'app/img/sprite/**/*.*',
-                destImg: 'build/img/sprite-<%= hash %>.png',
-                destCSS: 'app/css/sprite.styl',
+                dest: 'build/img/sprite-<%= hash %>.png',
+                destCss: 'app/css/sprite.styl',
                 imgPath: '/img/sprite-<%= hash %>.png',
                 algorithm: 'binary-tree',
                 padding: 1
             },
             retina: {
                 src: 'app/img/sprite-retina/**/*.*',
-                destImg: 'build/img/sprite-retina-<%= hash %>.png',
-                destCSS: 'app/css/sprite-retina.styl',
+                dest: 'build/img/sprite-retina-<%= hash %>.png',
+                destCss: 'app/css/sprite-retina.styl',
                 imgPath: '/img/sprite-retina-<%= hash %>.png',
                 algorithm: 'binary-tree',
                 padding: 2,
