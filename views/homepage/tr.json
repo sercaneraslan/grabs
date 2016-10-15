@@ -55,9 +55,6 @@
                 "name": "STYLUS",
                 "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> ya da <strong>SASS</strong> kullanabilirsiniz."
             }, {
-                "name": "JADE",
-                "text": "<a href=\"http://jade-lang.com/\">Jade</a> ile daha az kod yazarak daha akıllı HTML'ler üretebilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>jade</strong> alanından ayarlar değiştirilebilir. Eğer Jade kullanacaksanız \"<strong>For HTML</strong>\", kullanmayacaksanız \"<strong>For Jade</strong>\" yazan alanları silebilirsiniz."
-            }, {
                 "name": "SPRITE",
                 "text": "<strong>app/img/sprite</strong> klasörü altındaki imajları <strong>sprite.png</strong> dosyasında sprite olarak birleştirir ve Stylus dosyalarında dosya isimleri ile pozisyon tanımlaya gerek kalmadan otomatik olarak kullabilmeyi sağlar.<br><br> <strong>app/img/sprite-retina</strong> altındaki imajları da <strong>sprite-retina.png</strong> dosyasında sprite olarak birleştirir ve ekstra bir işleme gerek kalmadan retina desteği olan cihazlarda retina'lı sprite'ı kullandırır. Diğer klasörler işlem görmeden otomatik olarak <strong>build</strong> klösörüne taşınır.<br><br> <strong>app/css/global.styl</strong> dosyasında örnek kullanım vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>sprite</strong> alanından ayarlar değiştirilebilir."
             }, {
