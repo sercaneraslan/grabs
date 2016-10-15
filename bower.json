@@ -21,7 +21,7 @@
         "grabs"
     ],
     "dependencies": {
-        "angular": "1.4.9",
-        "angular-route": "1.4.9"
+        "angular": "1.5.8",
+        "angular-route": "1.5.8"
     }
 }

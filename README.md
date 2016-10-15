@@ -14,7 +14,7 @@ Steps:
 
 ### Documentation
 
-Visit the [grabs.in](http://grabs.in) website.
+Please visit the [website](http://grabs.in).
 
 ### License
 
