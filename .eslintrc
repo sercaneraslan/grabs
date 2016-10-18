@@ -5,7 +5,7 @@
         "strict": 2,
         "no-unused-vars": 2,
         "no-undef": 2,
-        "quotes": "single",
+        "quotes": [2, "single"],
         "curly": 2,
         "eqeqeq": 0,
         "camelcase": 2,
@@ -22,16 +22,15 @@
         }],
         "space-before-blocks": [2, "always"],
         "space-in-parens": [2, "never"],
-        "space-after-keywords": [2, "always"],
+        "keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}],
         "key-spacing": [2, {
             "beforeColon": false,
             "afterColon": true
         }]
     },
     "globals": {
-        "grabs": true,
-        "angular": true,
         "console": true,
+        "angular": true,
         "window": true,
         "document": true
     }
