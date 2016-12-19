@@ -124,7 +124,12 @@ module.exports = function (grunt) {
                 port: 9000,
                 livereload: 35729,
                 hostname: 'localhost',
-                open: true
+                open: true,
+                middleware: function(connect, options, middlewares) {
+                    var modRewrite = require('connect-modrewrite');
+                    middlewares.unshift(modRewrite(['!(\\..+)$ / [L]']));
+                    return middlewares;
+                }
             },
             server: {
                 options: {
