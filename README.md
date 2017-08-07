@@ -14,7 +14,7 @@ Steps:
 
 ### Documentation
 
-Please visit the [website](http://grabs.in).
+Please visit the [website](http://sercaneraslan.com/grabs/).
 
 ### License
 
