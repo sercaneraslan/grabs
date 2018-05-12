@@ -50,7 +50,7 @@
                 "text": "Proje içinde AngularJS kuruludur. HTML5 Push State desteği açıktır ve her isteğin <strong>index.html'e</strong> gitmesi için ayarlar yapılmıştır. <strong>app/config/ng-config.js</strong> dosyasından ayarlar değiştirilebilir."
             }, {
                 "name": "BOWER",
-                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>./grabs bower:install</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bower</strong> alanından grunt ayarları değiştirilebilir."
+                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>./grabs bowercopy</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bowercopy</strong> alanından grunt ayarları değiştirilebilir."
             }, {
                 "name": "STYLUS",
                 "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> ya da <strong>SASS</strong> kullanabilirsiniz."

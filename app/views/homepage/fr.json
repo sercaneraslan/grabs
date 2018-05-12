@@ -50,7 +50,7 @@
                 "text": "Grabs est livré avec AngularJS. Le support de l'HTML5 Push State est activé et les configurations sont faites de telle sorte que toutes les requetes sont faites vers le fichier <strong>index.html</strong>. Vous pouvez modifier ce comportement dans le fichier <strong>app/js/config/ng-config.js</strong> si besoin."
             }, {
                 "name": "BOWER",
-                "text": "Avec Bower, vous pouvez gérer automatiquement vos dépendances externes. Tout ce que vous devez faire pour les intégrer a votre projet est de modifier le fichier <strong>bower.json</strong> et executer la command <strong>./grabs bower:install</strong> command. Vous pouvez également modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous le répertoire <strong>bower</strong>."
+                "text": "Avec Bower, vous pouvez gérer automatiquement vos dépendances externes. Tout ce que vous devez faire pour les intégrer a votre projet est de modifier le fichier <strong>bower.json</strong> et executer la command <strong>./grabs bowercopy</strong> command. Vous pouvez également modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous le répertoire <strong>bowercopy</strong>."
             }, {
                 "name": "STYLUS",
                 "text": "Vos fichiers Stylus sont automatiquement compilés en fichiers CSS minifiés. Vous pouvez modifier ce comportement dans le fichier <strong>gruntfile.js</strong> sous la section <strong>stylus</strong>."

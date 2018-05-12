@@ -50,7 +50,7 @@
                 "text": "Grabs comes with AngularJS. HTML5 Push State support is active and configurations are done so that all the requests are to the <strong>index.html</strong> file. You can change this behavior in <strong>app/js/config/ng-config.js</strong> file."
             }, {
                 "name": "BOWER",
-                "text": "With Bower you can manage your external dependencies automatically. All you need to do to get them is to edit <strong>bower.json</strong> file and issue <strong>./grabs bower:install</strong> command. You can also change the configuration from <strong>gruntfile.js</strong> file's <strong>bower</strong> section."
+                "text": "With Bower you can manage your external dependencies automatically. All you need to do to get them is to edit <strong>bower.json</strong> file and issue <strong>./grabs bowercopy</strong> command. You can also change the configuration from <strong>gruntfile.js</strong> file's <strong>bowercopy</strong> section."
             }, {
                 "name": "STYLUS",
                 "text": "Your Stylus files are automatically compiled to CSS and minified. You can configure this behavior in <strong>gruntfile.js</strong> under <strong>stylus</strong> section."
@@ -89,7 +89,7 @@
                 "text": "Whenever an HTML, CSS or JavaScript file changes your browser window will be automatically refreshed. You can change these settings from <strong>gruntfile.js</strong> under <strong>connect</strong> section."
             }, {
                 "name": "MULTILANGUAGE SUPPORT",
-                "text": "Add multiple languages to your project. Example: <strong>homepage</strong>"
+                "text": "Add multiple languages to your project. Checkout <strong>homepage</strong>."
             }, {
                 "name": "ECMASCRIPT 6",
                 "text": "With the command of <strong>./grabs es6</strong> you can easily convert existing JavaScript codes from ECMAScript 6 to ECMAScript 5 automatically. You should also define your settings via <strong>traceur</strong> section which resides at <strong>gruntfile.js</strong> file."
