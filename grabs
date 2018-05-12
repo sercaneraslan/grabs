@@ -37,7 +37,7 @@ if [[ "$COMMAND" == "install" ]]; then
     npm install || error "NPM Installation FAILED"
 
     info "Installing Bower Dependencies"
-    grunt bower:install || error "Bower Installation FAILED"
+    grunt bowercopy || error "Bower Installation FAILED"
 
     info "Grunt Working"
     grunt || error "Grunt FAILED"

@@ -10,8 +10,8 @@
 module.exports = function (grunt) {
     var myHash = new Date().valueOf().toString(),
         sortedJsPaths = [
-            'js/components/angular/*.js',
-            'js/components/angular-route/*.js',
+            'js/components/angular.js',
+            'js/components/angular-route.js',
             'js/**/*.js',
             'views/**/*.js'
         ],
@@ -144,14 +144,19 @@ module.exports = function (grunt) {
             }
         },
 
-        bower: {
+        bowercopy: {
             options: {
-                targetDir: 'app/js/components',
-                cleanTargetDir: false,
-                cleanBowerDir: true,
-                verbose: true
+                clean: true
             },
-            install: {}
+            libs: {
+                options: {
+                    destPrefix: 'app/js/components/'
+                },
+                files: {
+                    'angular.js': 'angular/angular.js',
+                    'angular-route.js': 'angular-route/angular-route.js'
+                },
+            }
         },
 
         htmlmin: {

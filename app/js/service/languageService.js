@@ -1,5 +1,5 @@
 // Grabs Language Service
-grabs.factory('languageService', ['$http', function($http) {
+angular.module('grabs').factory('languageService', ['$http', function($http) {
     'use strict';
 
     return {

@@ -1,11 +1,11 @@
 // Defined Grabs Module
-var grabs = angular.module('grabs', [
-        'ngRoute',
-        'pageTitle'
-    ]);
+window.grabs = angular.module('grabs', [
+    'ngRoute',
+    'pageTitle'
+]);
 
 // Grabs Routing Configuration
-grabs.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
+angular.module('grabs').config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     'use strict';
 
     $routeProvider.when('/', {
