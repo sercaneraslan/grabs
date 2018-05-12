@@ -46,7 +46,7 @@
                 "name": "GRUNT",
                 "text": "You can add Grunt plugins to add more tasks to your project. You can also change the existing configurations from the <strong>gruntfile.js</strong> file."
             }, {
-                "name": "ANGULAR",
+                "name": "ANGULARJS",
                 "text": "Grabs comes with AngularJS. HTML5 Push State support is active and configurations are done so that all the requests are to the <strong>index.html</strong> file. You can change this behavior in <strong>app/js/config/ng-config.js</strong> file."
             }, {
                 "name": "BOWER",

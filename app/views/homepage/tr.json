@@ -46,7 +46,7 @@
                 "name": "GRUNT",
                 "text": "Grunt eklentileri ile dilediğiniz görevi projenize ekleyebilirsiniz. <strong>gruntfile.js</strong> dosyasından ayarlar değiştirilebilir."
             }, {
-                "name": "ANGULAR",
+                "name": "ANGULARJS",
                 "text": "Proje içinde AngularJS kuruludur. HTML5 Push State desteği açıktır ve her isteğin <strong>index.html'e</strong> gitmesi için ayarlar yapılmıştır. <strong>app/config/ng-config.js</strong> dosyasından ayarlar değiştirilebilir."
             }, {
                 "name": "BOWER",
