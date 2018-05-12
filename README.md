@@ -90,6 +90,6 @@ With the command of **./grabs es6** you can easily convert existing JavaScript c
 #### Eslint
 ESLint, checks your JavaScript files against a standart list of rules for high quality code. You can change these settings from **.eslintrc** under **rules** section.
 
-### License
+## License
 
 MIT License
