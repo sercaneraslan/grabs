@@ -30,7 +30,7 @@ The Yeoman way:
 
 Yes, that is all.
 
-### Features
+## Features
 
 #### GRUNT
 You can add Grunt plugins to add more tasks to your project. You can also change the existing configurations from the **gruntfile.js** file.
