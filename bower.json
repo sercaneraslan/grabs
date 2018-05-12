@@ -8,7 +8,7 @@
         "url": "https://github.com/sercaneraslan/grabs.git"
     },
     "homepage": "http://grabs.in",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": [],
     "ignore": "",
     "keywords": [
@@ -21,7 +21,7 @@
         "grabs"
     ],
     "dependencies": {
-        "angular": "1.6.4",
-        "angular-route": "1.6.4"
+        "angular": "1.6.9",
+        "angular-route": "1.6.9"
     }
 }
