@@ -247,16 +247,14 @@ module.exports = function (grunt) {
                 dest: 'build/img/sprite-<%= hash %>.png',
                 destCss: 'app/css/sprite.styl',
                 imgPath: '/img/sprite-<%= hash %>.png',
-                algorithm: 'binary-tree',
-                padding: 1
+                algorithm: 'alt-diagonal'
             },
             retina: {
                 src: 'app/img/sprite-retina/**/*.*',
                 dest: 'build/img/sprite-retina-<%= hash %>.png',
                 destCss: 'app/css/sprite-retina.styl',
                 imgPath: '/img/sprite-retina-<%= hash %>.png',
-                algorithm: 'binary-tree',
-                padding: 2,
+                algorithm: 'alt-diagonal',
                 cssVarMap: function (sprite) {
                     sprite.name = sprite.name + '-2x';
                 }

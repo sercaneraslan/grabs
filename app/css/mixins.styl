@@ -16,7 +16,8 @@ getSprite(sprite1x, sprite2x = false)
         @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
 
             spriteImage sprite2x
-            background-size sprite1x[4] sprite1x[5]
+            background-position (sprite2x[2] / 2) (sprite2x[3] / 2)
+            background-size (sprite2x[6] / 2) (sprite2x[7] / 2)
 
 // Element Alignment Mixin
 alignment()
