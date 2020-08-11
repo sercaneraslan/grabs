@@ -57,9 +57,6 @@ In development mode CSS, HTML and JavaScript files are not minimized or combined
 #### Live Mode
 In Live mode HTML, CSS and JavaScript files are minimized. CSS and JavaScript files are combined into a single CSS and JavaScript file. Images are compressed. File caching is disabled. You can use Live mode by issuing **./grabs live** command.
 
-#### Code Complexity Report
-Plato produces a complexity report of the JavaScript files in your project. You can change these settings from **gruntfile.js** under **plato** section. You can get the report by issuing **./grabs report** command.
-
 #### HTML Compress
 Your HTML files are compressed while being delivered. You can change these settings from **gruntfile.js** under **htmlmin** section.
 
@@ -83,9 +80,6 @@ Whenever an HTML, CSS or JavaScript file changes your browser window will be aut
 
 #### Multilanguage Support
 Add multiple languages to your project. Checkout **homepage**.
-
-#### EcmaScript 6
-With the command of **./grabs es6** you can easily convert existing JavaScript codes from ECMAScript 6 to ECMAScript 5 automatically. You should also define your settings via **traceur** section which resides at **gruntfile.js** file.
 
 #### Eslint
 ESLint, checks your JavaScript files against a standart list of rules for high quality code. You can change these settings from **.eslintrc** under **rules** section.

@@ -64,9 +64,6 @@
                 "name": "LIVE MODE",
                 "text": "In Live mode HTML, CSS and JavaScript files are minimized. CSS and JavaScript files are combined into a single CSS and JavaScript file. Images are compressed. File caching is disabled. You can use Live mode by issuing <strong>./grabs live</strong> command."
             }, {
-                "name": "CODE COMPLEXITY REPORT",
-                "text": "Plato produces a complexity report of the JavaScript files in your project. You can change these settings from <strong>gruntfile.js</strong> under <strong>plato</strong> section. You can get the report by issuing <strong>./grabs report</strong> command."
-            }, {
                 "name": "HTML COMPRESS",
                 "text": "Your HTML files are compressed while being delivered. You can change these settings from <strong>gruntfile.js</strong> under <strong>htmlmin</strong> section."
             }, {
@@ -90,9 +87,6 @@
             }, {
                 "name": "MULTILANGUAGE SUPPORT",
                 "text": "Add multiple languages to your project. Checkout <strong>homepage</strong>."
-            }, {
-                "name": "ECMASCRIPT 6",
-                "text": "With the command of <strong>./grabs es6</strong> you can easily convert existing JavaScript codes from ECMAScript 6 to ECMAScript 5 automatically. You should also define your settings via <strong>traceur</strong> section which resides at <strong>gruntfile.js</strong> file."
             }, {
                 "name": "ESLINT",
                 "text": "ESLint, checks your JavaScript files against a standart list of rules for high quality code. You can change these settings from <strong>.eslintrc</strong> under <strong>rules</strong> section."

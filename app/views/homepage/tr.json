@@ -64,9 +64,6 @@
                 "name": "YAYIN MODU",
                 "text": "Yayın modunda HTML, CSS, JavaScript ve imajlar sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. Dosyaların cache'lenmesi engellenir. <strong>./grabs live</strong> komutu ile live modu çalıştırılabilir."
             }, {
-                "name": "KOD KARMAŞIKLIK RAPORU",
-                "text": "Proje içinde kullanılanılan JavaScript'lerin karmaşıklık raporunu oluşturur. <strong>gruntfile.js</strong> dosyasındaki <strong>plato</strong> alanından ayarlar değiştirilebilir. <strong>./grabs report</strong> komutuyla raporu görüntüleyebilirsiniz."
-            }, {
                 "name": "HTML SIKIŞTIRMA",
                 "text": "HTML dosyalarının sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>htmlmin</strong> alanından ayarlar değiştirilebilir."
             }, {
@@ -90,9 +87,6 @@
             }, {
                 "name": "ÇOKLU DİL DESTEĞİ",
                 "text": "Projenize birden fazla dil seçeneği ekleyebilirsiniz. Örnek kullanım <strong>homepage</strong> sayfasında vardır."
-            }, {
-                "name": "ECMASCRIPT 6",
-                "text": "<strong>./grabs es6</strong> komutuyla JavaScript kodlarınızı ECMAScript 6 versiyonundan, ECMAScript 5 versiyonuna otomatik çevirebilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>traceur</strong> alanından ayarlarınızı tanımlamalısınız."
             }, {
                 "name": "ESLINT",
                 "text": "ESLint, kod kalitesini yüksek tutmak için JavaScript dosyalarınız her değiştiğinde bir kural listesine göre kontrol eder. <strong>.eslintrc</strong> dosyasındaki <strong>rules</strong> alanından ayarlar değiştirilebilir."

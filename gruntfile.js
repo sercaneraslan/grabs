@@ -111,14 +111,6 @@ module.exports = function (grunt) {
             target: ['app/views/**/*.js']
         },
 
-        plato: {
-            report: {
-                files: {
-                    'reports/': ['app/js/**/*.js', 'app/views/**/*.js', '!app/js/components/**/*.js'],
-                }
-            }
-        },
-
         connect: {
             options: {
                 port: 9000,
@@ -136,12 +128,6 @@ module.exports = function (grunt) {
                     base: 'build'
                 }
             },
-            report: {
-                options: {
-                    base: 'reports',
-                    keepalive: true
-                }
-            }
         },
 
         bowercopy: {
@@ -203,26 +189,6 @@ module.exports = function (grunt) {
                     sourceMap: false,
                     sourceMapIncludeSources: true
                 }
-            }
-        },
-
-        traceur: {
-            options: {
-                experimental: true,
-                blockBinding: true,
-                moduleNaming: {
-                    stripPrefix: "src/es6",
-                    addPrefix: "com/grabs/project"
-                },
-                copyRuntime: 'build/es6/'
-            },
-            custom: {
-                files: [{
-                    expand: true,
-                    cwd: 'app/es6/',
-                    src: '*.js',
-                    dest: 'build/es6/'
-                }]
             }
         },
 
@@ -347,16 +313,5 @@ module.exports = function (grunt) {
         'htmlmin:index',
         'connect:server',
         'watch'
-    ]);
-
-    // $ grunt report
-    grunt.registerTask('report', [
-        'plato:report',
-        'connect:report'
-    ]);
-
-    // $ grunt es6
-    grunt.registerTask('es6', [
-        'traceur'
     ]);
 };
