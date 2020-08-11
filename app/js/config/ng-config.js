@@ -18,11 +18,6 @@ angular.module('grabs').config(['$locationProvider', '$routeProvider', function 
         controller: 'HomepageCtrl',
         key: 'tr'
     }).
-    when('/fr', {
-        templateUrl: '/views/homepage/homepage.html',
-        controller: 'HomepageCtrl',
-        key: 'fr'
-    }).
     otherwise({
         redirectTo: '/'
     });
