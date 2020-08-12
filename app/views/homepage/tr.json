@@ -32,11 +32,6 @@
             "cd grabs",
             "./grabs install"
         ],
-        "yeoman": "Eğer Yeoman kullanıyorsanız aşağıdaki adımları uygulayabilirsiniz.",
-        "yeomanCommand": [
-            "npm install -g generator-grabs",
-            "yo grabs"
-        ],
         "thatsIt": "Evet, hepsi bu kadar."
     },
     "features": {

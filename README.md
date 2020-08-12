@@ -23,11 +23,6 @@ Steps:
 1. `cd grabs`
 1. `./grabs install`
 
-The Yeoman way:
-
-1. `npm install -g generator-grabs`
-1. `yo grabs`
-
 Yes, that is all.
 
 ## Features
