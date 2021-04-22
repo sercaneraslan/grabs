@@ -31,7 +31,7 @@ Yes, that is all.
 You can add Grunt plugins to add more tasks to your project. You can also change the existing configurations from the **gruntfile.js** file.
 
 #### AngularJS
-Grabs comes with AngularJS. HTML5 Push State support is active and configurations are done so that all the requests are to the **index.html** file. You can change this behavior in **app/js/config/ng-config.js** file.
+Grabs comes with AngularJS. HTML5 Push State support is active and configurations are done so that all the requests are sent to the **index.html** file. You can change this behavior in **app/js/config/ng-config.js** file.
 
 #### Bower
 With Bower you can manage your external dependencies automatically. All you need to do to get them is to edit **bower.json** file and issue **./grabs bowercopy** command. You can also change the configuration from **gruntfile.js** file's **bowercopy** section.
