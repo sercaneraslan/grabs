@@ -6,7 +6,7 @@
   "repository": "https://github.com/sercaneraslan/grabs.git",
   "version": "0.0.3",
   "devDependencies": {
-    "grunt": "1.2.1",
+    "grunt": "1.5.3",
     "grunt-bowercopy": "1.2.5",
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-connect": "3.0.0",
