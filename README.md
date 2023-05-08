@@ -13,7 +13,7 @@ Your development environment is ready in seconds.
 
 Grabs eases your development process by including the most popular tools and libraries that are mostly needed for a development environment and allow you to easily extend with new capabilities.
 
-In order to use Grabs, [Node.js](http://nodejs.org), [Npm](https://www.npmjs.org/) and [Grunt](http://gruntjs.com). By applying the steps down below your development environment will be ready to use.
+In order to use Grabs, [Node.js](http://nodejs.org), [Npm](https://www.npmjs.org/), [Bower](https://bower.io/) and [Grunt](http://gruntjs.com). By applying the steps down below your development environment will be ready to use.
 
 ### Install
 
